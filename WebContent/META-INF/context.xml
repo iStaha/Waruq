@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<!-- Specify a JDBC datasource -->
+	<Resource name="jdbc/testdb" auth="Container"
+		type="javax.sql.DataSource" username="root" password=""
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/amigos?useSSL=false"
+		maxActive="10" maxIdle="4"  maxWait="10000"
+		logAbandoned="true"  removeAbandoned="true"
+		removeAbandonedTimeout="60"		
+		/>
+</Context>
